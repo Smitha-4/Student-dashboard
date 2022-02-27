@@ -1,4 +1,6 @@
+
 function joinClass(){
-   window.location="https://meet.google.com/imv-qrxr-ips"
-    
+ window.location="https://meet.google.com/sbj-pcge-owf"
 }
+
+

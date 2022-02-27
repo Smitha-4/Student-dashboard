@@ -1,12 +1,19 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: monospace;
 }
 nav{
     width: 100%;
     align-items: center;
     padding: 25px;
-    background-color: rgb(255, 253, 124);
+    background-color: blueviolet;
+    font-size:70px;
+    text-align: center;
+}
+.neheader{
+    font-size: xx-large;
+    text-align: center;
 }
 .header{
       text-align: center;
@@ -56,12 +63,22 @@ nav{
 }
 .join-class{
     margin-top: 10 px;
+    width: 100%;
+    height: 300px;
+    background-color: yellow;
+    font-size: 30px;
+}
+.joinClass{
+background-color: rgb(49, 0, 128);
+font-size: 30px;
+width: 100px;
 }
 .container{
     margin-top: 500px;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
+   
 }
 .class-topics, .class-projects{
     list-style: none;
@@ -71,7 +88,39 @@ nav{
 }
 .footer{
     bottom: 0;
-    text-align: center;
-    line-height: 20;
+    display: flex;
+    line-height: 2;
     background-color: #000;
+}
+.main-header{
+    width: 100%;
+    height: 100%;
+    background-image: url("logo.png");
+    background-size: cover;
+}
+.list{
+    height: 400px;
+    width: 500px;
+    margin:20px ;
+    font-size: 25px;
+    
+}
+.reference{
+    height: 400px;
+    width: 100%;
+    margin:20px ;
+    font-size: 25px;
+    background-color: yellow;
+   }
+.reference h3{
+    text-align: center;
+    font-size: 35px;
+    text-decoration: underline;
+}
+.footerdiv2{
+    border: yellow 2px solid;
+    align-self: center;
+    margin-right: 150px;
+    align-items: center;
+    text-align: center;
 }
