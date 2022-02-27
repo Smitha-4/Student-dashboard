@@ -160,7 +160,7 @@
 </center>
 </div>
 <br><br>
-<div class="output"></div>
+<div class="reference1" style="text-align: center;" id="output"></div>
 <br><br>
 <div class="footer">
    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
@@ -219,21 +219,31 @@
         });    
   }
   function addProject(TheHomework){
-      docoment.getElementById("output").innerHTML=""
-      TheHomework.forEach(element=>{
-          addProject(newvalue);
-      })
+    document.getElementById("output").innerHTML +=TheHomework;
+      
   }
   function getData(){
       const dbRef = ref(db,"Web Apps/");
-      
+      var homework=document.getElementById("Homework").value;
+       /*
+      onValue('value',function(snapshot){
+          var homeworkvalue = snapshot.val()
+          alert(homeworkvalue);
+          document.getElementById("output").innerHTML=homeworkvalue;
+      })
+      */
       onValue(dbRef,(snapshot)=>{
           var homework=[]
           snapshot.forEach(childSnapshot => {
-              homework.push(childSnapshot.val());
+            homework.push(childSnapshot.val());
+           var row ='<h4> <a href="homework" target="_blank" >'+homework+'</a></h4><br>'
+            document.getElementById("output").innerHTML +=row;
               });
-              addProject(homework);
+              alert(homework)
+              
+              
       });
+     
   }
 
   addValuebtn.addEventListener("click",addValue)
